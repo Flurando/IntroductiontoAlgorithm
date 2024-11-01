@@ -1,0 +1,8 @@
+for j = 1 to A.length
+    if v = A[j]
+        return j
+return NIL
+
+init: If v is the first element in A, the algorithm would return 1, otherwise it would enter the first iteration.
+hold: Each time only one element is compared with v. Unless it is already the last element, it would pass on if the check failed or return the current index if the check passed.
+end: When the last element is checked it would return anyway, NIL or n. If it stopped earlier, it will return the index then.
