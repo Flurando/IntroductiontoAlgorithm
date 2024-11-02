@@ -1,0 +1,15 @@
+SELECTION ALGORITHM (A)
+for i = 1 to A.length - 1
+    index_of_min = i
+    for j = i to A.length
+        if A[index_of_min] > A[j]
+            index_of_min = j
+    SWAP (A[index_of_min], A[i})
+
+Init: at first the algorithm puts the smallest in A at the first slot, which is right
+Hold: if the last time is right, this time the algorithm would check from the next in A and all the values before it has been sorted rightly. All the elements left are equal or bigger than the sorted ones, meaning the situation is actually the same.
+End; The last check would be a two-element check, where the last and the one to last would be checked if they need to be swapped, which is right.
+
+We don't need to repeat the last element because it is meaningless to swap one element with itself.
+
+theta (n^2)
