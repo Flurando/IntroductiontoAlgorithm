@@ -1,0 +1,1 @@
+Just modify the algorithm that it handles the situation of the highest possibility first, then second, then third, all the way down to the last(if the last exists).

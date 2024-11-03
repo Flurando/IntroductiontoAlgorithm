@@ -1,0 +1,4 @@
+Of cource half of all on average.
+The worst situation is checking until the last element, which is, n times or A.length times.
+I think the time is theta n for both of them.
+Because n/2 and n can both be considered as theta n.
