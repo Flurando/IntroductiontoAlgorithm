@@ -12,14 +12,13 @@
 	(vector-set! R j (vector-ref A (+ q j))))
       (vector-set! L n1 +inf.0)
       (vector-set! R n2 +inf.0)
-      (let ([i 0] [j 0])
-	(do ([k (- p 1) (+ k 1)])
-	    ((>= k r))
+      (let loop ([i 0] [j 0] [k (- p 1)])
+	(unless (>= k r)
 	  (if (<= (vector-ref L i) (vector-ref R j))
 	      (begin
 		(vector-set! A k (vector-ref L i))
-		(set! i (+ i 1)))
+		(loop (+ i 1) j (+ k 1)))
 	      (begin
 		(vector-set! A k (vector-ref R j))
-		(set! j (+ j 1)))))))))
+		(loop i (+ j 1) (+ k 1)))))))))
 	      
