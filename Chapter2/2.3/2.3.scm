@@ -22,3 +22,10 @@
 		(vector-set! A k (vector-ref R j))
 		(loop i (+ j 1) (+ k 1)))))))))
 	      
+(define merge-sort
+  (lambda (A p r)
+    (when (< p r)
+      (let ([q (car (floor (/ (+ p r) 2)))])
+	(merge-sort A p q)
+	(merge-sort A (+ q 1) r)
+	(merge A p q r)))))
