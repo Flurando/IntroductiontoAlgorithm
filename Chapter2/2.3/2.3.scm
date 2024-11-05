@@ -1,6 +1,6 @@
 (define merge
   (lambda (A p q r)
-    (let ([n1 (+ (- q p) 1)]
+    (let* ([n1 (+ (- q p) 1)]
 	  [n2 (- r q)]
 	  [L (make-vector (+ n1 1))]
 	  [R (make-vector (+ n2 1))])
@@ -20,7 +20,8 @@
 		(loop (+ i 1) j (+ k 1)))
 	      (begin
 		(vector-set! A k (vector-ref R j))
-		(loop i (+ j 1) (+ k 1)))))))))
+		(loop i (+ j 1) (+ k 1)))))))
+    A))
 	      
 (define merge-sort
   (lambda (A p r)
@@ -28,4 +29,5 @@
       (let ([q (car (floor (/ (+ p r) 2)))])
 	(merge-sort A p q)
 	(merge-sort A (+ q 1) r)
-	(merge A p q r)))))
+	(merge A p q r)))
+    A))
