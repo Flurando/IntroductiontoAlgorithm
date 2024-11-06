@@ -1,0 +1,7 @@
+n = 2^1: T(2) = 2
+n = 2^2: T(4) = 2T(2) + 4 = 8 = 2^2 * 2 = 2^2 lg 2^2
+suppose when n = 2^k, we have T(2^k) = k * 2^k
+then for n = 2^(k+1), there is
+T(2^(k+1)) = 2 * T(2^k) + 2^(k+1) = k * 2^(k+1) + 2^(k+1) = (k+1) * 2^(k+1)
+which is exactly T(n) = nlgn
+thus, the answer indeed is T(n) = nlgn
