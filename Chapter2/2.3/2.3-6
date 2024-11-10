@@ -1,0 +1,3 @@
+Yes we can.
+Actually, the ISERTION-SORT used to take approximately n(n-1)/2 steps which is theta(n^2). Now, it only need [lg2] + [lg3] + [lg4] + ... + [lgn] steps which is exactly theta(nlgn).
+We just need to replace the old while with the new 1/2-sort while.

@@ -19,3 +19,5 @@
       (let ([f (floor (/ a 2))])
 	(set! index-to-insert f)
 	(1/2-sort v (f . (list-head (cdr p) f))))])))
+
+;;;Under the worst situation, every next input is either the largest or the smallest. Considering n=2^k we have that each time we need k-1 steps approximately and maybe 1 or 2 steps to make the insertion thus the time is theta(lgn)

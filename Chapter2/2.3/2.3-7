@@ -1,0 +1,3 @@
+We iterate through S, and construct another helper set called A which aims to be a sorted set with any elements like (x - i) where i belongs to S.
+ALso, in each iteration, we try to put the new (x - i) in the right place of A using 1/2-sort method and stop as long as we encounter an old element in A with same value.
+If not interrupted so that the iteration goes smoothly to the end of S, we can stop as well, saying confidently, "NaN".
