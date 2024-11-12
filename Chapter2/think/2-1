@@ -1,0 +1,4 @@
+a. n/k * theta(k^2) = theta(nk)
+b. Just apply MERGE to each 2 in the piles and recursively do until there is only one pile left
+c.?--I don't know!:(
+d.?--neither.
