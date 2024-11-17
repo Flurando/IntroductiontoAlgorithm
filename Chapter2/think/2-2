@@ -1,0 +1,2 @@
+a.we still need to prove that (1) BUBBLESORT is true when n=1,2 (2) if BUBBLESORT is true when n=k (k<A.length), we have BUBBLESORT is true when tackling the k+1 th element, leading to the correctness of n=k+1
+b.
