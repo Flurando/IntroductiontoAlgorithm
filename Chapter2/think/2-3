@@ -1,0 +1,11 @@
+a.theta(n)
+b.
+sum = 0
+for i=0 upto n:
+    sum = sum + a_i * x^i
+This would take the same steps number as Horner as theta(n) but it need much more expt calculation while Horner only need multiply, which means its steps, even though have the same number as that of Horner's, would take a much longer time.
+c.
+Start: i=n, y = a_{n-1} + xa_n.
+Continue: if k, k+1, ..., n suits the equation, we have y = a_{k-2} + x [y when k] = 0 + a_{k-2} + xa_{k-1} + x^2 a_k + ... + x^{n-k} a_n suiting that for k-1
+End: when i=0, we multiply the last y with x and add an a_0 to it, over to get the desired output.
+d.check i, we know that a_i is multiplied by x for i times, constructing the correct output.
